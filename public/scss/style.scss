@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    a{
+        text-decoration: none;
+    }
+}
+//VARIABLES
+@import 'utilities/variables.scss';
+
+//VIEWS
+@import 'views/home.scss';
+@import 'views/login.scss';
+@import 'views/register.scss';
+@import 'views/catalogue.scss';
+
+//COMPONENTS
+@import 'components/header.scss';
+@import 'components/footer.scss';

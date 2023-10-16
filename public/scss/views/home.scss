@@ -1,0 +1,46 @@
+.section_imagenes{
+    display: flex;
+    height: 800px;
+    background-color: $color-background;
+
+    .div_ubicaciones{
+        position: relative;
+        width: 35%;
+
+        h3{
+            position: absolute;
+            color: grey;
+            background-color: rgba(255,255,255,0.7);
+            padding: 10px 70px;
+            top: 140px;
+            right: -145px;
+            text-align: center;
+            text-transform: uppercase;
+            transform: rotate(-90deg);
+            font-weight: 600;
+        }
+    }
+    .div_alquileres{
+        position: relative;
+        padding-left: 40px;
+        
+        .titulo_alquileres{
+            position: absolute;
+            text-transform: uppercase;
+            right: 80px;
+            top: 20px;
+            font-size: 30px;
+            color: white;
+            font-weight:900;
+        }
+        .titulo_hogar{
+            position: absolute;
+            bottom: -10px;
+            padding: 10px 40px;
+            font-weight:900;
+            font-size: 50px;
+            color: GREY;
+            background-color: rgba(255,255,255,0.7);
+        }
+    }
+}

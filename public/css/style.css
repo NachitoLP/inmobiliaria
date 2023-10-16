@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden; }
+  * a {
+    text-decoration: none; }
+
+.section_imagenes {
+  display: flex;
+  height: 800px;
+  background-color: #d4cec5; }
+  .section_imagenes .div_ubicaciones {
+    position: relative;
+    width: 35%; }
+    .section_imagenes .div_ubicaciones h3 {
+      position: absolute;
+      color: grey;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px 70px;
+      top: 140px;
+      right: -145px;
+      text-align: center;
+      text-transform: uppercase;
+      transform: rotate(-90deg);
+      font-weight: 600; }
+  .section_imagenes .div_alquileres {
+    position: relative;
+    padding-left: 40px; }
+    .section_imagenes .div_alquileres .titulo_alquileres {
+      position: absolute;
+      text-transform: uppercase;
+      right: 80px;
+      top: 20px;
+      font-size: 30px;
+      color: white;
+      font-weight: 900; }
+    .section_imagenes .div_alquileres .titulo_hogar {
+      position: absolute;
+      bottom: -10px;
+      padding: 10px 40px;
+      font-weight: 900;
+      font-size: 50px;
+      color: GREY;
+      background-color: rgba(255, 255, 255, 0.7); }
+
+.header {
+  background-color: #d4cec5;
+  height: fit-content; }
+  .header .login_div {
+    text-align: right;
+    padding: 10px; }
+    .header .login_div a {
+      text-decoration: none !important;
+      margin: 10px 10px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: grey; }
+  .header .navbar {
+    padding-bottom: 20px; }
+    .header .navbar .navbar-brand {
+      font-weight: 800;
+      font-size: 24px; }
+  .header .navbar-expand-lg .navbar-collapse {
+    justify-content: right; }
+    .header .navbar-expand-lg .navbar-collapse .navbar-nav li a {
+      text-transform: uppercase;
+      margin: 0px 20px;
+      font-weight: 600;
+      color: black; }
+    .header .navbar-expand-lg .navbar-collapse .d-flex {
+      position: relative; }
+      .header .navbar-expand-lg .navbar-collapse .d-flex input {
+        background-color: transparent;
+        border-radius: 40px;
+        border-color: black;
+        width: 300px;
+        font-weight: 600; }
+      .header .navbar-expand-lg .navbar-collapse .d-flex button {
+        border: none;
+        position: absolute;
+        right: 18px;
+        padding: 0px; }
+        .header .navbar-expand-lg .navbar-collapse .d-flex button span {
+          color: black;
+          padding-top: 7px;
+          transition: all 0.2s ease-out; }
+          .header .navbar-expand-lg .navbar-collapse .d-flex button span:hover {
+            color: white; }
+        .header .navbar-expand-lg .navbar-collapse .d-flex button:hover {
+          background: transparent;
+          border-color: transparent; }
+        .header .navbar-expand-lg .navbar-collapse .d-flex button:focus {
+          text-shadow: none;
+          background: transparent;
+          box-shadow: none; }
+          .header .navbar-expand-lg .navbar-collapse .d-flex button:focus ::shadow {
+            color: transparent; }
+        .header .navbar-expand-lg .navbar-collapse .d-flex button:active {
+          background: transparent;
+          border-color: transparent; }
+
+.me-auto {
+  margin-right: 0px !important; }

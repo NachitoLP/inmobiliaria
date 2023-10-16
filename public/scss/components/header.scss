@@ -1,0 +1,79 @@
+.header{
+    background-color: $color-background;
+    height: fit-content;
+    .login_div{
+        text-align: right;
+        padding: 10px;
+        a{
+            text-decoration: none !important;
+            margin: 10px 10px;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: grey;
+        }
+    }
+    .navbar{
+        padding-bottom: 20px;
+        .navbar-brand{
+            font-weight: 800;
+            font-size: 24px;
+        }
+    }
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: right;
+        .navbar-nav{
+            li{
+                a{
+                    text-transform: uppercase;
+                    margin: 0px 20px;
+                    font-weight: 600;
+                    color: black;
+                }
+            }
+        }
+        .d-flex{
+            position: relative;
+            input{
+                background-color: transparent;
+                border-radius: 40px;
+                border-color: black;
+                width: 300px;
+                font-weight: 600;
+            }
+            button{
+                border: none;
+                position: absolute;
+                right: 18px;
+                padding: 0px;
+                span{
+                    color: black;
+                    padding-top: 7px;
+                    transition: all 0.2s ease-out;
+                    &:hover{
+                        color: white;
+                    }
+                }
+                &:hover{
+                    background: transparent;
+                    border-color: transparent;
+                }
+                &:focus{
+                    text-shadow: none;
+                    background: transparent;
+                    box-shadow: none;
+                    ::shadow{
+                        color: transparent;
+                    }
+                }
+                &:active{
+                    background: transparent;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}
+.me-auto{
+    margin-right: 0px !important;
+}
