@@ -1,16 +1,91 @@
 .section_register{
     display: flex;
+    height: 100vh;
+    background-color: $color-background;
 
+    .img_register{
+        background-image: url("https://media.canva.com/1/image-resize/1/2000_1333_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9Tcm1UNC9NQUZ1OWhTcm1UNC8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAPrY_Qz6OrdIYFwDbnb47A0GYZgr_v3xm3kjzKAw7pUi&exp=1697594891&x-canva-quality=screen_3x&csig=AAAAAAAAAAAAAAAAAAAAALVoAk2j6xZifYr-CpF7K9bBY5Qr2ihohXKIrvhI5S-B");
+        width: 50%;
+        background-position: center;
+    }
     .form_register{
         width: 50%;
+        margin: auto;
         h3{
             text-align: center;
+            padding: 10px 40px;
+            font-weight: bolder;
+            font-size: 30px;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 40px;
+            color: black;
+            background-color: rgba(255,255,255,0.7);
+            text-transform: uppercase;
         }
         form{
+            button{
+                text-align: center;
+                display: block;
+                margin: 20px auto;
+                width: 140px;
+                padding: 5px 15px;
+                border-radius: 20px;
+                background-color: rgb(74, 74, 74);
+                border: none;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
             .div_input{
                 margin: auto;
-                width: 300px;
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                margin-bottom: 30px;
+                input{
+                    height: 35px;
+                    background-color: rgba(255,255,255,0.7);
+                    font-weight: 600;
+                    padding: 5px;
+                    border: none;
+                }
             }
+            p{
+                font-weight: 600;
+                text-align: center;
+            }
+            label{
+                text-transform: uppercase;
+                color: black;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .img_register{
+        display: none !important;
+    }
+    .section_register{
+        background-image: url("https://media.canva.com/1/image-resize/1/2000_1333_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9Tcm1UNC9NQUZ1OWhTcm1UNC8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAPrY_Qz6OrdIYFwDbnb47A0GYZgr_v3xm3kjzKAw7pUi&exp=1697594891&x-canva-quality=screen_3x&csig=AAAAAAAAAAAAAAAAAAAAALVoAk2j6xZifYr-CpF7K9bBY5Qr2ihohXKIrvhI5S-B");
+        width: 100% !important;
+        background-position: center;
+
+        .form_register{
+            width: 85% !important;
+            background-color: rgba(255,255,255,0.7);
+            h3{
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .section_register{
+        .form_register{
+            width: 100% !important;
         }
     }
 }

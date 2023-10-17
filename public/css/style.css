@@ -11,8 +11,8 @@
 
 .section_imagenes {
   display: flex;
-  height: 800px;
-  background-color: red; }
+  height: fit-content;
+  background-color: #d4cec5; }
   .section_imagenes .div_ubicaciones {
     position: relative;
     width: 35%; }
@@ -29,7 +29,8 @@
       font-weight: 600; }
   .section_imagenes .div_alquileres {
     position: relative;
-    padding-left: 40px; }
+    padding-left: 40px;
+    width: 65%; }
     .section_imagenes .div_alquileres .titulo_alquileres {
       position: absolute;
       text-transform: uppercase;
@@ -40,22 +41,84 @@
       font-weight: 900; }
     .section_imagenes .div_alquileres .titulo_hogar {
       position: absolute;
-      bottom: -10px;
+      bottom: -8px;
       padding: 10px 40px;
       font-weight: 900;
       font-size: 50px;
-      color: GREY;
+      color: black;
       background-color: rgba(255, 255, 255, 0.7); }
+    .section_imagenes .div_alquileres img {
+      height: 100%; }
 
 .section_register {
-  display: flex; }
+  display: flex;
+  height: 100vh;
+  background-color: #d4cec5; }
+  .section_register .img_register {
+    background-image: url("https://media.canva.com/1/image-resize/1/2000_1333_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9Tcm1UNC9NQUZ1OWhTcm1UNC8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAPrY_Qz6OrdIYFwDbnb47A0GYZgr_v3xm3kjzKAw7pUi&exp=1697594891&x-canva-quality=screen_3x&csig=AAAAAAAAAAAAAAAAAAAAALVoAk2j6xZifYr-CpF7K9bBY5Qr2ihohXKIrvhI5S-B");
+    width: 50%;
+    background-position: center; }
   .section_register .form_register {
-    width: 50%; }
+    width: 50%;
+    margin: auto; }
     .section_register .form_register h3 {
-      text-align: center; }
+      text-align: center;
+      padding: 10px 40px;
+      font-weight: bolder;
+      font-size: 30px;
+      width: 70%;
+      margin: auto;
+      margin-bottom: 40px;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.7);
+      text-transform: uppercase; }
+    .section_register .form_register form button {
+      text-align: center;
+      display: block;
+      margin: 20px auto;
+      width: 140px;
+      padding: 5px 15px;
+      border-radius: 20px;
+      background-color: #4a4a4a;
+      border: none;
+      text-transform: uppercase;
+      font-weight: bold; }
     .section_register .form_register form .div_input {
       margin: auto;
-      width: 300px; }
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin-bottom: 30px; }
+      .section_register .form_register form .div_input input {
+        height: 35px;
+        background-color: rgba(255, 255, 255, 0.7);
+        font-weight: 600;
+        padding: 5px;
+        border: none; }
+    .section_register .form_register form p {
+      font-weight: 600;
+      text-align: center; }
+    .section_register .form_register form label {
+      text-transform: uppercase;
+      color: black;
+      font-weight: 600; }
+
+@media (max-width: 1000px) {
+  .img_register {
+    display: none !important; }
+  .section_register {
+    background-image: url("https://media.canva.com/1/image-resize/1/2000_1333_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9Tcm1UNC9NQUZ1OWhTcm1UNC8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAPrY_Qz6OrdIYFwDbnb47A0GYZgr_v3xm3kjzKAw7pUi&exp=1697594891&x-canva-quality=screen_3x&csig=AAAAAAAAAAAAAAAAAAAAALVoAk2j6xZifYr-CpF7K9bBY5Qr2ihohXKIrvhI5S-B");
+    width: 100% !important;
+    background-position: center; }
+    .section_register .form_register {
+      width: 85% !important;
+      background-color: rgba(255, 255, 255, 0.7); }
+      .section_register .form_register h3 {
+        width: 100% !important; } }
+
+@media (max-width: 500px) {
+  .section_register .form_register {
+    width: 100% !important; } }
 
 .header {
   background-color: #d4cec5;

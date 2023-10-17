@@ -1,7 +1,7 @@
 .section_imagenes{
     display: flex;
-    height: 800px;
-    background-color: red;
+    height: fit-content;
+    background-color: $color-background;
 
     .div_ubicaciones{
         position: relative;
@@ -23,7 +23,7 @@
     .div_alquileres{
         position: relative;
         padding-left: 40px;
-        
+        width: 65%;
         .titulo_alquileres{
             position: absolute;
             text-transform: uppercase;
@@ -35,12 +35,15 @@
         }
         .titulo_hogar{
             position: absolute;
-            bottom: -10px;
+            bottom: -8px;
             padding: 10px 40px;
             font-weight:900;
             font-size: 50px;
-            color: GREY;
+            color: black;
             background-color: rgba(255,255,255,0.7);
+        }
+        img{
+            height: 100%;
         }
     }
 }
