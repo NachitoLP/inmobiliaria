@@ -12,7 +12,7 @@
 .section_imagenes {
   display: flex;
   height: 800px;
-  background-color: #d4cec5; }
+  background-color: red; }
   .section_imagenes .div_ubicaciones {
     position: relative;
     width: 35%; }
@@ -46,6 +46,16 @@
       font-size: 50px;
       color: GREY;
       background-color: rgba(255, 255, 255, 0.7); }
+
+.section_register {
+  display: flex; }
+  .section_register .form_register {
+    width: 50%; }
+    .section_register .form_register h3 {
+      text-align: center; }
+    .section_register .form_register form .div_input {
+      margin: auto;
+      width: 300px; }
 
 .header {
   background-color: #d4cec5;

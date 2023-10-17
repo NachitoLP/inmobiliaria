@@ -1,0 +1,16 @@
+.section_register{
+    display: flex;
+
+    .form_register{
+        width: 50%;
+        h3{
+            text-align: center;
+        }
+        form{
+            .div_input{
+                margin: auto;
+                width: 300px;
+            }
+        }
+    }
+}
