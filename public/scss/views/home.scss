@@ -2,12 +2,13 @@
     display: flex;
     height: fit-content;
     background-color: $color-background;
-    height: 800px;
-
+    height: 700px;
+    
     .div_ubicaciones{
+        overflow: hidden;
         position: relative;
         width: 35%;
-        height: fit-content;
+        height: 700px;
         
         h3{
             position: absolute;
@@ -24,7 +25,8 @@
     }
     .div_alquileres{
         position: relative;
-        height: 800px !important;
+        overflow: hidden;
+        height: 700px !important;
         padding-left: 40px;
         width: 65%;
         .titulo_alquileres{

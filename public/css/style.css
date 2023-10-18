@@ -4,8 +4,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  overflow: hidden; }
+  font-family: 'Montserrat', sans-serif; }
   * a {
     text-decoration: none; }
 
@@ -13,11 +12,12 @@
   display: flex;
   height: fit-content;
   background-color: #d4cec5;
-  height: 800px; }
+  height: 700px; }
   .section_imagenes .div_ubicaciones {
+    overflow: hidden;
     position: relative;
     width: 35%;
-    height: fit-content; }
+    height: 700px; }
     .section_imagenes .div_ubicaciones h3 {
       position: absolute;
       color: grey;
@@ -31,7 +31,8 @@
       font-weight: 600; }
   .section_imagenes .div_alquileres {
     position: relative;
-    height: 800px !important;
+    overflow: hidden;
+    height: 700px !important;
     padding-left: 40px;
     width: 65%; }
     .section_imagenes .div_alquileres .titulo_alquileres {
