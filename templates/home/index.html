@@ -17,8 +17,12 @@
 <body>
     <header class="container-fluid header">
         <div class="login_div">
+            {% if not user.is_authenticated %}
             <a href="/sign-in">Iniciar sesión</a>
             <a href="/sign-up">Registrarse</a>
+            {% else %}
+            <a href="/sign-out">Salir</a>
+            {% endif %}
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -49,11 +53,11 @@
     <section class="container-fluid section_imagenes">
         <div class="div_ubicaciones">
             <h3>Ubicaciones</h3>
-            <img class="_7_i_XA" crossorigin="anonymous" src="https://media.canva.com/1/image-resize/1/800_533_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS85d2Fucy9NQUZ1OXY5d2Fucy8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAECjC5ie41XrUDE-HPlPVUr5dL_QsJqyM5SzunTDxURo&amp;exp=1697596396&amp;x-canva-quality=screen&amp;csig=AAAAAAAAAAAAAAAAAAAAACd2HSvAikEOz3rw182X4R2Otpg7Ps6hLM-j1jB-XH7X" draggable="false" style="object-fit: fill;">
+            <img class="_7_i_XA" crossorigin="anonymous" src="{% static 'images/ubicaciones.jpeg' %}">
         </div>
         <div class="div_alquileres">
             <h3 class="titulo_alquileres">Alquileres</h3>
-            <img class="_7_i_XA" crossorigin="anonymous" src="https://media.canva.com/1/image-resize/1/800_502_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9VSXJmZy9NQUZ1OWhVSXJmZy8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAIANnWaRrM_Ak31yvusNeiqS_BbZOKNSaCE4zwIUvtIQ&amp;exp=1697595258&amp;x-canva-quality=screen&amp;csig=AAAAAAAAAAAAAAAAAAAAACU5jX7QWnfzy3vK-xLAD6kU3ggPMgBM1dwE3ywhe7pz" draggable="false" style="object-fit: fill;">
+            <img class="_7_i_XA" crossorigin="anonymous" src="{% static 'images/alquileres.jpeg' %}">
             <h1 class="titulo_hogar">Encuentra tu hogar</h1>
         </div>
     </section>

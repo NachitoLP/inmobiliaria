@@ -12,10 +12,12 @@
 .section_imagenes {
   display: flex;
   height: fit-content;
-  background-color: #d4cec5; }
+  background-color: #d4cec5;
+  height: 800px; }
   .section_imagenes .div_ubicaciones {
     position: relative;
-    width: 35%; }
+    width: 35%;
+    height: fit-content; }
     .section_imagenes .div_ubicaciones h3 {
       position: absolute;
       color: grey;
@@ -29,6 +31,7 @@
       font-weight: 600; }
   .section_imagenes .div_alquileres {
     position: relative;
+    height: 800px !important;
     padding-left: 40px;
     width: 65%; }
     .section_imagenes .div_alquileres .titulo_alquileres {
@@ -41,11 +44,11 @@
       font-weight: 900; }
     .section_imagenes .div_alquileres .titulo_hogar {
       position: absolute;
-      bottom: -8px;
+      bottom: -1.5%;
       padding: 10px 40px;
       font-weight: 900;
       font-size: 50px;
-      color: black;
+      color: grey;
       background-color: rgba(255, 255, 255, 0.7); }
     .section_imagenes .div_alquileres img {
       height: 100%; }
@@ -54,10 +57,9 @@
   display: flex;
   height: 100vh;
   background-color: #d4cec5; }
-  .section_register .img_register {
-    background-image: url("https://media.canva.com/1/image-resize/1/2000_1333_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9Tcm1UNC9NQUZ1OWhTcm1UNC8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAPrY_Qz6OrdIYFwDbnb47A0GYZgr_v3xm3kjzKAw7pUi&exp=1697594891&x-canva-quality=screen_3x&csig=AAAAAAAAAAAAAAAAAAAAALVoAk2j6xZifYr-CpF7K9bBY5Qr2ihohXKIrvhI5S-B");
-    width: 50%;
-    background-position: center; }
+  .section_register .body_login_error {
+    text-align: center;
+    color: red; }
   .section_register .form_register {
     width: 50%;
     margin: auto; }
@@ -107,18 +109,19 @@
   .img_register {
     display: none !important; }
   .section_register {
-    background-image: url("https://media.canva.com/1/image-resize/1/2000_1333_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9Tcm1UNC9NQUZ1OWhTcm1UNC8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAPrY_Qz6OrdIYFwDbnb47A0GYZgr_v3xm3kjzKAw7pUi&exp=1697594891&x-canva-quality=screen_3x&csig=AAAAAAAAAAAAAAAAAAAAALVoAk2j6xZifYr-CpF7K9bBY5Qr2ihohXKIrvhI5S-B");
     width: 100% !important;
     background-position: center; }
     .section_register .form_register {
+      padding: 20px 0px;
       width: 85% !important;
-      background-color: rgba(255, 255, 255, 0.7); }
-      .section_register .form_register h3 {
-        width: 100% !important; } }
+      background-color: rgba(153, 153, 153, 0.7); } }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   .section_register .form_register {
-    width: 100% !important; } }
+    width: 100% !important;
+    padding: 0px !important; }
+    .section_register .form_register h3 {
+      width: 100% !important; } }
 
 .header {
   background-color: #d4cec5;
@@ -153,6 +156,8 @@
         border-color: black;
         width: 300px;
         font-weight: 600; }
+        .header .navbar-expand-lg .navbar-collapse .d-flex input:focus {
+          box-shadow: none !important; }
       .header .navbar-expand-lg .navbar-collapse .d-flex button {
         border: none;
         position: absolute;

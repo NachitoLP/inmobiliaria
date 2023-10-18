@@ -40,6 +40,9 @@
                 border-color: black;
                 width: 300px;
                 font-weight: 600;
+                &:focus{
+                    box-shadow: none !important;
+                }
             }
             button{
                 border: none;

@@ -33,16 +33,19 @@ def sessionRegister(request):
                 })
         else :
             try:
-                user = User.objects.create_user(
-                    first_name=request.POST['first_name'],
-                    last_name=request.POST['last_name'],
+                if request.POST['password'] == request.POST['password-2'] :
+                    user = User.objects.create_user(
                     username=request.POST['username'],
                     email=request.POST['email'],
                     password=request.POST['password']
                     )
-                user.save()
-                login(request, user)
-                return redirect('http://127.0.0.1:8080/')
+                    user.save()
+                    login(request, user)
+                    return redirect('http://127.0.0.1:8080/')
+                else:
+                    return render(request, 'login_&_register/register.html',{
+                    "error": 'Las contraseñas no coinciden.'
+                })
             except IntegrityError:
                 return render(request, 'login_&_register/register.html',{
                     "error": '¡El usuario ingresado ya existe!'

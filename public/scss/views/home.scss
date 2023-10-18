@@ -2,11 +2,13 @@
     display: flex;
     height: fit-content;
     background-color: $color-background;
+    height: 800px;
 
     .div_ubicaciones{
         position: relative;
         width: 35%;
-
+        height: fit-content;
+        
         h3{
             position: absolute;
             color: grey;
@@ -22,6 +24,7 @@
     }
     .div_alquileres{
         position: relative;
+        height: 800px !important;
         padding-left: 40px;
         width: 65%;
         .titulo_alquileres{
@@ -35,11 +38,11 @@
         }
         .titulo_hogar{
             position: absolute;
-            bottom: -8px;
+            bottom: -1.5%;
             padding: 10px 40px;
             font-weight:900;
             font-size: 50px;
-            color: black;
+            color: grey;
             background-color: rgba(255,255,255,0.7);
         }
         img{

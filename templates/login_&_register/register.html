@@ -17,6 +17,11 @@
 <body>
     <section class="container-fluid section_register">
         <section class="form_register">
+            {% if error %}
+                <div class="body_login_error">
+                    <p><strong>{{error}}</strong></p>
+                </div>
+            {% endif %}
             <h3>Registrarse</h3>
             <form action="" method="post">
                 {% csrf_token %}
@@ -41,7 +46,18 @@
             </form>
         </section>
         <section class="img_register">
-            
+            <style>
+                .img_register{
+                    background-image: url("{% static 'images/register.jpeg' %}");
+                    width: 50%;
+                    background-position: center;
+                }
+                @media(max-width:1000px){
+                    .section_register{
+                        background-image: url("{% static 'images/register.jpeg' %}");
+                    }
+                }
+            </style>
         </section>
     </section>
 
