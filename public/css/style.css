@@ -124,6 +124,42 @@
     .section_register .form_register h3 {
       width: 100% !important; } }
 
+.navbar_catalogue {
+  justify-content: space-evenly !important; }
+  .navbar_catalogue a {
+    color: black;
+    text-decoration: none;
+    padding: 0px 5px;
+    background-color: white;
+    border-radius: 50px;
+    transition: all 0.3s; }
+    .navbar_catalogue a span {
+      padding-top: 5px; }
+  .navbar_catalogue .ul_catalogue {
+    justify-content: space-evenly !important;
+    width: 70%; }
+    .navbar_catalogue .ul_catalogue .select_option {
+      cursor: pointer;
+      font-weight: 800;
+      position: relative; }
+      .navbar_catalogue .ul_catalogue .select_option span {
+        position: absolute;
+        right: -25px; }
+    .navbar_catalogue .ul_catalogue .select_option > ul {
+      display: none;
+      list-style: none; }
+    .navbar_catalogue .ul_catalogue .select_option:hover > ul {
+      display: block;
+      width: 100px;
+      padding-left: 0px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      position: absolute; }
+    .navbar_catalogue .ul_catalogue .select_option:hover > ul > li {
+      padding: 5px;
+      text-align: center;
+      border-bottom: 1px solid white; }
+
 .header {
   background-color: #d4cec5;
   height: fit-content; }

@@ -1,0 +1,47 @@
+.navbar_catalogue{
+    justify-content: space-evenly !important;
+
+    a{
+        color: black;
+        text-decoration: none;
+        padding: 0px 5px;
+        background-color: white;
+        border-radius: 50px;
+        transition: all 0.3s;
+        span{
+            padding-top: 5px;
+        }
+    }
+
+    .ul_catalogue{
+        justify-content: space-evenly !important;
+        width: 70%;
+
+        .select_option{
+            cursor: pointer;
+            font-weight: 800;
+            position: relative;
+            span{
+                position: absolute;
+                right: -25px;
+            }
+        }
+        .select_option > ul { 
+            display: none; 
+            list-style: none;
+        }
+        .select_option:hover > ul {
+            display: block;
+            width: 100px;
+            padding-left: 0px;
+            border-radius: 10px;
+            background-color: rgba(255,255,255,0.7);
+            position: absolute;
+        }
+        .select_option:hover > ul > li {
+            padding: 5px;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+    }
+}
