@@ -11,6 +11,7 @@
     }
 }
 
+
 //VARIABLES
 @import 'utilities/variables.scss';
 
@@ -22,3 +23,7 @@
 //COMPONENTS
 @import 'components/header.scss';
 @import 'components/footer.scss';
+
+body{
+    background-color: $color-background;
+}
